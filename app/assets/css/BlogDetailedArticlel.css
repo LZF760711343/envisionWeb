@@ -1,0 +1,193 @@
+/*@media (max-width: 750px) {*/
+/*.welcome-bar{*/
+/*height: 90px;*/
+/*width: 100%;*/
+/*background: none;*/
+/*}*/
+/*}*/
+body{
+    overflow-x: hidden;
+    background-color: #EEEEEE;
+}
+/*搜索盒子*/
+.welcome-bar{
+    margin: 0;
+    height:110px;
+    width: 100%;
+    background: url("../img/title_bar_bg.gif") 0 0 repeat-x;
+}
+/*图标样式*/
+.welcome-bar-left>.row>.col-xs-3> img{
+    width: 3em;
+    height:3em;
+    margin-top: 1em;
+}
+/*内容样式*/
+.welcome-bar-left>.row>.col-xs-9>h1{
+    font-size: 1.7em;
+    margin-top: 0.5em;
+    color: #444e69;
+    margin-bottom: 0;
+}
+.welcome-bar-left>.row>.col-xs-9> h1>span{
+    color: #2e88c7;
+}
+.welcome-bar-left>.row>.col-xs-9> span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    line-height: 1em;
+    color: #7e8496;
+}
+
+/*----重置表单----*/
+form,input{
+    border:none;
+    margin:0;
+    padding:0;
+    vertical-align:middle;
+}
+/*----表单----*/
+.subForm{
+    background: url("../img/search_form_bg.png") no-repeat;
+    height:50px;
+    padding:8px 0 8px 10px;
+    width: 280px;
+    position: relative;
+    left: -120px;
+    margin-left: 50%;
+}
+/*----搜索文本框----*/
+.subText{
+    background:#fafafa;
+    padding:0;
+    height:29px;
+    width:190px;
+    color:#7e8496;
+    font-size:13px;
+    line-height:29px;
+    margin-left: -20px;
+}
+.input-div{
+    width: 16.4em;
+    height: 2em;
+    margin:-0.1em 0 0 1.4em;
+}
+/*内容区域*/
+/*文字与图片区域*/
+.content>.col-xs-10> h2 {
+    font-size: 18px;
+    color: #444e69;
+    margin: 10px;
+    padding-bottom: 10px;
+}
+.content>.content-img-span {
+    padding: 0;
+    margin-top: 10px
+}
+.content>.content-img-span>a{
+    position: absolute;
+    left: 17px;
+    top: 5px;
+}
+.content>.content-img-span>a:hover{
+    text-decoration: none;
+    color: #5E2F7F;
+}
+.content>.col-xs-12>p{
+    font-size: 12px;
+    font-style: italic;
+    color: #8f8f8f;
+    margin: -10px 10px 10px 10px;
+}
+.box-img{
+    border: 1px solid #dddddd;
+    width: 94%;
+    padding: 8px;
+    background-color: #FFFFFF;
+    margin: 0 auto 10px auto;
+}
+.container-content{
+    margin: 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #E2E2E2;
+    box-shadow: 0 1px 0 #ffffff; /*底边阴影*/
+}
+.container-content>a{
+    text-decoration: underline;
+}
+.container-content>a:nth-child(1):hover,.container-content>a:nth-child(2):hover{
+    text-decoration: none;
+}
+/*底下按钮*/
+.pagination {
+    background: url(../img/pagination_bg.gif) 0 0 scroll no-repeat;
+    height: 45px;
+    padding-bottom: 11px;
+    padding-top: 10px;
+    padding-left: 20px;
+    font-size: 18px;
+    font-family: "HattoriHanzoLight", Calibri, sans-serif;
+}
+/*设置分页按钮*/
+.pagination>a:nth-child(1){
+    position: absolute;
+    margin-left: 20px
+}
+.pagination>a:nth-child(2){
+    position: absolute;
+    margin-left: 40px
+}
+.pagination .inner {
+    background: url(../img/pagination_bg.gif) right -45px scroll no-repeat;
+    padding: 11px 15px 11px 100px;
+}
+.pagination .page-next {
+    position: absolute;
+    margin-left: -25px;
+}
+/*设置分页按钮*/
+
+/*内容表单设置*/
+.form-group>div{
+    padding: 0;
+}
+.form-group>.row>.text-center>.btn-submit>a{
+    color: #878B99;
+}
+.form-group>.row>.text-center>.btn-submit>a:hover{
+    text-decoration: none;
+    color:#A087B2;
+}
+.form-group>.row>.col-xs-4>div{
+    margin-top: 20px;
+}
+.form-group>.row>.col-xs-4>div>a{
+    color: #61A4D2;
+
+}
+.form-group>.row>.col-xs-4>div>a:hover{
+    text-decoration: none;
+    color:#592C78;
+}
+
+.dropdown >select{
+    width: 100%;
+    height: 30px;
+    color: #B29999
+}
+/*提交按钮样式*/
+.btn-submit{
+    border: medium none;
+    color: #2F3850;
+    font-family: "HattoriHanzoLight",Calibri,sans-serif;
+    font-size: 18px;
+    height: 49px;
+    line-height: 33px;
+    margin: 10px 0;
+    outline-width: 0;
+    padding: 3px 35px 15px;
+    text-align: center;
+    text-shadow: 0 1px 1px #FFFFFF;
+    width: 217px;
+    background: url("../img/btn_submit.png");
+}

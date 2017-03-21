@@ -1,0 +1,143 @@
+@charset "UTF-8";
+body{
+    font-family: "Microsoft YaHei";
+    background-color: #EEEEEE;
+    overflow-x: hidden;
+}
+/*a标签重置*/
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+/*灰色格子背景区域*/
+/*搜索盒子*/
+.portfolio-bar{
+    margin: 0;
+    width: 100%;
+    height:7.8em;
+    background: url("../img/title_bar_bg.gif") 0 0 repeat-x;
+}
+/*图标样式*/
+.portfolio-bar-left>.row>.col-xs-3> img{
+    width: 3em;
+    height:3em;
+    margin-top: 1em;
+}
+/*内容样式*/
+.portfolio-bar-left>.row>.col-xs-9>h1{
+    font-size: 1.7em;
+    margin-top: 0.5em;
+    color: #444e69;
+    margin-bottom: 0;
+}
+.portfolio-bar-left>.row>.col-xs-9> h1>span{
+    color: #2e88c7;
+}
+.portfolio-bar-left>.row>.col-xs-9> span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    line-height: 1em;
+    color: #7e8496;
+}
+/*----重置表单----*/
+.portfolio-bar-left form,input{
+    border:none;
+    margin:0;
+    padding:0;
+    vertical-align:middle;
+}
+/*----表单----*/
+.portfolio-bar-left .subForm{
+    background: url("../img/search_form_bg.png") no-repeat;
+    height:3.6em;
+    padding:0.7em 0 0.7em 0.6em;
+    width: 20em;
+    position: relative;
+    left: -8.5em;
+    margin-left: 50%;
+}
+.input-div{
+    width: 16.4em;
+    height: 2em;
+    margin:-0.1em 0 0 0.8em;
+}
+/*----搜索文本框----*/
+.portfolio-bar-left .subText{
+    background:#fafafa;
+    padding:0;
+    height:2em;
+    width:15.5em;
+    color:#7e8496;
+    font-size:0.9em;
+    border:0;
+}
+/*灰格子背景区域结束*/
+/*内容区，缩略图区域开始*/
+.thumbnail{
+    border: 0;
+}
+.thumbnail>a>img{
+    padding: 0.35em;
+    border: 1px solid #ddd;
+    border-radius: 0.25em;
+}
+.thumbnail .caption h4,.portfolio-2cols-thumbnail span{
+    color: #2E88C7;
+}
+/*第一张缩略图的小标签*/
+.portfolio-2cols-row{
+    position: relative;
+}
+.portfolio-2cols-titleImg img{
+    position: absolute;
+    right: 10%;
+    top: 0;
+}
+/*缩略图中的文字介绍的最后一行*/
+.portfolio-2cols-thumbnail{
+    background-image: url("../img/ico_plus.png");
+    background-repeat: no-repeat;
+}
+.portfolio-2cols-thumbnail span{
+    margin-left: 1.4em;
+}
+/*缩略图部分结束*/
+/*分页部分*/
+/*背景*/
+.pagination {
+    background: url(../img/pagination_bg.gif) 0 0 scroll no-repeat;
+    height: 45px;
+    padding-bottom: 11px;
+    padding-top: 10px;
+    padding-left: 20px;
+    font-size: 18px;
+    font-family: "HattoriHanzoLight", Calibri, sans-serif;
+}
+.pagination .inner {
+    background: url(../img/pagination_bg.gif) right -45px scroll no-repeat;
+    line-height: 45px;
+    padding: 21px 15px 11px 100px;
+}
+/*设置分页按钮*/
+.pagination>a:nth-child(2){
+    position: absolute;
+    margin-left: 30px
+}
+.pagination>a:nth-child(3){
+    position: absolute;
+    margin-left: 55px
+}
+/*上一页*/
+.pagination .page-prev{
+    position: absolute;
+    margin-left: -5px;
+}
+/*下一页*/
+.pagination .page-next {
+    position: absolute;
+    margin-left: -25px;
+}
+/*设置分页按钮*/
+/*分页部分结束*/

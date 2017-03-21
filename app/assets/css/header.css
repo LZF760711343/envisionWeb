@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+body{
+    overflow-x: hidden;
+}
+/*取消导航条圆角*/
+.navigation{
+    margin-bottom: 0;
+    border-radius: 0;
+    border: 0;
+}
+/*侧边栏样式*/
+.sidenav-menu>li>a:hover{
+    text-decoration: none;
+}
+.sidenav-menu>li>ul>li>a:hover{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.sidenav-menu>li>ul>li>a>img{
+    width: 10px;
+}
+/*------导航右边图标------*/
+.aaa{
+    float: right!important;
+}
+@media (min-width: 768px) {
+    .aaa{
+        position: fixed;
+        right: 0;
+    }
+}

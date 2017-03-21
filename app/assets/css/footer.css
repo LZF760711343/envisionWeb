@@ -1,0 +1,34 @@
+@charset "UTF-8";
+/*脚注*/
+.footer>.footer-text{
+    padding-top: 5px;
+    height: 40px;
+    background-color: #2B2633;
+    border-top: 5px solid #222329;
+    color: #FFFFFF;
+    margin-bottom: 0;
+}
+.footer-body{
+    width: 100%;
+    height: 240px;
+    background-color:#2A2633;
+    color: #E3E3E3;
+}
+.footer-body>.col-xs-6{
+    padding: 0;
+}
+.footer-body>.col-xs-6>ul{
+    list-style: none;
+}
+.footer-body>.col-xs-6>ul>li{
+    margin-top: 5px;
+}
+.footer-body>div:last-child{
+    margin-top: 10px;
+}
+.img-social{
+    margin-top: 20px;
+    height: 28px;
+    width: 100%;
+    overflow: hidden;
+}

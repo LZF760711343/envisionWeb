@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myapp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>siderbar</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../bower_components/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/dist/sidenav.min.css">
+    <link rel="stylesheet" href="assets/css/siderbar.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <!--jquery-->
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../bower_components/swiper/dist/js/swiper.min.js"></script>
+    <script src="assets/dist/sidenav.min.js"></script>
+    <!--B3-->
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!--angular-->
+    <script src="../bower_components/angular/angular.min.js"></script>
+    <!--angular路由-->
+    <script src="../bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <!--模块顺序【1】-->
+    <script src="app.js"></script>
+    <!--路由表-->
+    <script src="router/uiRouter.js"></script>
+    <script src="run/run.js"></script>
+    <script src="server/basePath.js"></script>
+    <!--其他控制器-->
+    <script src="controller/indexCtrl.js"></script>
+</head>
+<body>
+    <!--侧边栏-->
+    <nav class="sidenav" data-sidenav data-sidenav-toggle="#sidenav-toggle">
+        <div class="sidenav-header">
+            <img src="assets/img/logo.png">
+        </div>
+        <ul class="sidenav-menu">
+            <li>
+                <a href="javascript:;" data-sidenav-dropdown-toggle class="active">
+                    <span>Sliders</span>
+                </a>
+                <ul class="sidenav-dropdown" data-sidenav-dropdown>
+                    <li><a href="index1.html"><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;Animated Slider</a></li>
+                    <li><a href="index2.html"><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;Nivo Slider</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;" data-sidenav-dropdown-toggle class="active">
+                    <span>Pages</span>
+                </a>
+                <ul class="sidenav-dropdown" data-sidenav-dropdown>
+                    <li><a href="siderbar.html"><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;page-sidebar</a></li>
+                    <li><a href="PricingPage.html"><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;page-pricing</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;" data-sidenav-dropdown-toggle class="active">
+                    <span>Styles</span>
+                </a>
+                <ul class="sidenav-dropdown" data-sidenav-dropdown>
+                    <li><a href="CustomFonts.html"><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;style-typography</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;" data-sidenav-dropdown-toggle class="active">
+                    <span>Portfolio</span>
+                </a>
+                <ul class="sidenav-dropdown" data-sidenav-dropdown>
+                    <li><a href="portfolio-1cols.html"><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;portfolio-1cols</a></li>
+                    <li><a href="portfolio-2cols.html"><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;portfolio-2cols</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="BlogDetailedArticlel.html" class="active">
+                    <span>Blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="Contact.html" class="active">
+                    <span>Contact</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!--侧边栏-->
+    <!--导航条-->
+    <nav class="navbar navbar-inverse navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#"><img src="assets/img/logo.png" width="140px"></a>
+                <a href="javascript:;" class="toggle navbar-brand aaa" id="sidenav-toggle"><i class="fa fa-list-ul"></i></a>
+            </div>
+        </div>
+    </nav>
+    <!--导航条-->
+    <!--副导航-->
+    <!--图标搜索区开始-->
+    <div class="welcome-bar">
+        <div class="welcome-bar-left">
+            <div class="row">
+                <div class="col-xs-3 text-right col-lg-2">
+                    <img src="assets/img/icon_typography.png"/>
+                </div>
+                <div class="col-xs-9 col-lg-4">
+                    <h1>Page with <span>Sidebar</span></h1>
+                    <span>Page subtitle if not set breadcrumb</span>
+                </div>
+                <div class="col-xs-12 text-center col-lg-6">
+                    <form class="subForm">
+                        <input type="text" class="subText" placeholder="Type for search">
+                        <input type="submit" class="subBtn">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--图标搜索区结束-->
+    <!--内容content-->
+    <div class="content">
+        <div class="container">
+            <div class="firstImg"><img src="assets/img/page_img_1.jpg"></div>
+            <h1 class="firstTitle">Typography & paragraph styles (h1)</h1>
+            <div class="firstText">I’ve gotten burned over Cheryl Tiegs, blown up for Raquel Welch. But when I end up in
+                the
+                hay it’s only hay, hey hey. I might jump an open drawbridge, or Tarzan from a vine. ‘Cause I’m the
+                unknown
+                stuntman that makes Eastwood look so fine.
+            </div>
+            <div class="secondImg"><img src="assets/img/page_img_1.jpg"></div>
+            <h2 class="secondTitle">Image Frame, position center</h2>
+            <h2>Image Frame with float left</h2>
+            <div class="thirdText">Duis aute irure dolor in reprehenderit in voluptate velit
+                <a href="">
+                    <img src="assets/img/temp_img_3.jpg" width="230" height="143" class="imgLeft">
+                </a>
+                esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in
+                culpa qui officia deserunt mollit anim id est laborum.
+                <div style="clear: both"></div>
+            </div>
+            <h2 style="float:right">Image Frame with float right</h2>
+            <div style="clear: both"></div>
+            <div class="fourthText">Sed ut perspiciatis unde omnis iste natus error sit
+                <a href="">
+                    <img src="assets/img/temp_img_1.jpg" width="230" height="143" class="imgRight">
+                </a>
+                voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                <div style="clear: both"></div>
+            </div>
+            <h2>Columns inside text:</h2>
+            <h3 style="color: #2e88c7"><a href="#">Multiple Colors & Slider options</a></h3>
+            <div><img src="assets/img/temp_img_1.png" width="93" height="76" class="smallImgRight">
+                Sliders in all forms &amp; colors: Javascript, Flash, you name it!
+                We’ve got it! But the best part is that they can be easily modified to fit your company’s look &amp;
+                feel.
+                <div style="clear: both"></div>
+            </div>
+            <div><a class="linkMore" href="#">more details</a></div>
+            <h3 style="color: #2e88c7;margin-left: 109px"><a href="#">Award winning design & coding</a></h3>
+            <div><img src="assets/img/temp_img_2.png" width="93" height="76" class="smallImgLeft">
+                These three icons below the text paragraphs are custom created for
+                the Envision theme &amp; the included PSD files contain all the layers needed to edit them.
+                <div style="clear: both"></div>
+            </div>
+            <div class="lastContent"><a class="linkMore" href="#">more details</a></div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="assets/img/slider_img_1.jpg"></div>
+                    <div class="swiper-slide"><img src="assets/img/slider_img_2.jpg"></div>
+                    <div class="swiper-slide"><img src="assets/img/slider_img_3.jpg"></div>
+                    <div class="swiper-slide"><img src="assets/img/slider_img_4.jpg"></div>
+                    <div class="swiper-slide"><img src="assets/img/slider_img_5.jpg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--脚注-->
+    <div class="footer row">
+        <div class="text-center footer-text">
+            <div class="col-xs-6"><span>What we do</span></div>
+            <div class="col-xs-6"><span>Who We Are</span></div>
+        </div>
+        <div class="footer-body">
+            <div class="col-xs-6">
+                <ul>
+                    <li><img src="assets/img/sidebar_list_arrow.gif"/><img src="assets/img/sidebar_list_arrow.gif"/>&nbsp;&nbsp;Bon Apetit</li>
+                    <li><img src="assets/img/sidebar_list_arrow.gif"/><img src="assets/img/sidebar_list_arrow.gif"/>&nbsp;&nbsp;Online Marketing</li>
+                    <li><img src="assets/img/sidebar_list_arrow.gif"/><img src="assets/img/sidebar_list_arrow.gif"/>&nbsp;&nbsp;Website Design</li>
+                    <li><img src="assets/img/sidebar_list_arrow.gif"/><img src="assets/img/sidebar_list_arrow.gif"/>&nbsp;&nbsp;Strategy</li>
+                    <li><img src="assets/img/sidebar_list_arrow.gif"/><img src="assets/img/sidebar_list_arrow.gif"/>&nbsp;&nbsp;E-Learning</li>
+                </ul>
+            </div>
+            <div class="col-xs-6">
+                <ul>
+                    <li><img src="assets/img/sidebar_list_arrow.gif"/><img src="assets/img/sidebar_list_arrow.gif"/>&nbsp;&nbsp;About us</li>
+                    <li><img src="assets/img/sidebar_list_arrow.gif"/><img src="assets/img/sidebar_list_arrow.gif"/>&nbsp;&nbsp;Our History</li>
+                    <li><img src="assets/img/sidebar_list_arrow.gif"/><img src="assets/img/sidebar_list_arrow.gif"/>&nbsp;&nbsp;Art Gallery</li>
+                    <li><img src="assets/img/sidebar_list_arrow.gif"/><img src="assets/img/sidebar_list_arrow.gif"/>&nbsp;&nbsp;The Mission</li>
+                </ul>
+            </div>
+            <div class="col-xs-7">
+                <div class="img-social container">
+                    <img src="assets/img/social_icons.png"/>
+                </div>
+            </div>
+            <div class="col-xs-12 text-center">
+                @2013 schinaz.com.please don't steall
+            </div>
+        </div>
+    </div>
+    <!--脚注-->
+</body>
+</html>
+<script>
+    var mySwiper = new Swiper('.swiper-container', {
+        autoplay: 2000,//可选选项，自动滑动
+        effect : 'coverflow',
+        slidesPerView: 1.5,
+        centeredSlides: true
+    });
+    $('[data-sidenav]').sidenav();
+</script>

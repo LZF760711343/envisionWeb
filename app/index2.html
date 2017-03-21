@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myapp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Nivo Slider</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/mystyle.css">
+    <link rel="stylesheet" href="../bower_components/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/sidenav.min.css">
+    <link rel="stylesheet" href="assets/css/header.css"/>
+    <link rel="stylesheet" href="assets/css/footer.css"/>
+    <!--jquery-->
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../bower_components/ionic/release/js/ionic.min.js"></script>
+    <script src="../bower_components/ionic/release/js/ionic.bundle.min.js"></script>
+    <script type="text/javascript" src="assets/dist/jquery.banner.js"></script>
+    <script type="text/javascript" src="../bower_components/swiper/dist/js/swiper.min.js"></script>
+    <script type="text/javascript" src="../bower_components/swiper/dist/js/swiper.jquery.min.js"></script>
+    <script type="text/javascript" src="assets/dist/sidenav.min.js"></script>
+    <!--B3-->
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!--angular-->
+    <script src="../bower_components/angular/angular.min.js"></script>
+    <!--angular路由-->
+    <script src="../bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <!--模块顺序【1】-->
+    <script src="app.js"></script>
+    <!--路由表-->
+    <script src="router/uiRouter.js"></script>
+    <script src="run/run.js"></script>
+    <script src="server/basePath.js"></script>
+    <!--其他控制器-->
+    <script src="controller/indexCtrl.js"></script>
+</head>
+<body>
+    <!--侧边栏-->
+    <nav class="sidenav" data-sidenav data-sidenav-toggle="#sidenav-toggle">
+        <div class="sidenav-header">
+            <img src="assets/img/logo.png">
+        </div>
+        <ul class="sidenav-menu">
+            <li>
+                <a href="javascript:;" data-sidenav-dropdown-toggle class="active">
+                    <span>Sliders</span>
+                </a>
+
+                <ul class="sidenav-dropdown" data-sidenav-dropdown>
+                    <li><a href="index1.html"><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;Animated Slider</a></li>
+                    <li><a href="index2.html"><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;Nivo Slider</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;" data-sidenav-dropdown-toggle class="active">
+                    <span>Pages</span>
+                </a>
+
+                <ul class="sidenav-dropdown" data-sidenav-dropdown>
+                    <li><a href="siderbar.html"><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;page-sidebar</a></li>
+                    <li><a href="PricingPage.html"><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;page-pricing</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;" data-sidenav-dropdown-toggle class="active">
+                    <span>Styles</span>
+                </a>
+                <ul class="sidenav-dropdown" data-sidenav-dropdown>
+                    <li><a href="CustomFonts.html"><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;style-typography</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;" data-sidenav-dropdown-toggle class="active">
+                    <span>Portfolio</span>
+                </a>
+                <ul class="sidenav-dropdown" data-sidenav-dropdown>
+                    <li><a href="portfolio-1cols.html"><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;portfolio-1cols</a></li>
+                    <li><a href="portfolio-2cols.html"><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;portfolio-2cols</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="BlogDetailedArticlel.html" class="active">
+                    <span>Blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="Contact.html" class="active">
+                    <span>Contact</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!--侧边栏-->
+    <!--导航条-->
+    <nav class="navbar navbar-inverse navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#"><img src="assets/img/logo.png" width="140px"></a>
+                <a href="javascript:;" class="toggle navbar-brand aaa" id="sidenav-toggle"><i class="fa fa-list-ul"></i></a>
+            </div>
+        </div>
+    </nav>
+    <!--导航条-->
+    <!--内容区开始-->
+    <ion-pane>
+        <!--轮播开始-->
+        <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="assets/img/slider1_image_1.png"style="height:14em;width: 100%"></div>
+            <div class="swiper-slide"><img src="assets/img/slider1_image_2.png"style="height:14em;width: 100%"></div>
+            <div class="swiper-slide"><img src="assets/img/slider1_image_3.png"style="height:14em;width: 100%"></div>
+        </div>
+    </div>
+        <script>
+            var mySwiper = new Swiper('.swiper-container', {
+                effect : 'cube',
+                direction : 'horizontal',
+                autoplay: 5000,//可选选项，自动滑动
+                autoplayDisableOnInteraction : false,
+                loop : true,
+
+                cube: {
+                    slideShadows: true,
+                    shadow: true,
+                    shadowOffset: 100,
+                    shadowScale: 0.6}
+            })
+        </script>
+        <!--轮播结束-->
+        <!--图文一开始-->
+        <div class="image-text1">
+            <div class="image-text1_box">
+                <a href="#"><span>Multiple Colors & Slider options</span></a>
+                <p>
+                    Sliders in all forms & colors;javascript,Flash,
+                    <img src="assets/img/temp_img_1.png"/>
+                    you name it!We`ve got it! But the best part is that they can be easily
+                    modified to fit your company`s look & feel.
+                </p>
+                <img src="assets/img/ico_plus.png">&nbsp;&nbsp;<a href="#">more details</a>
+            </div>
+            <div class="image-text1_box">
+                <a href="#"><span>Multiple Colors & Slider options</span></a>
+                <p>
+                    Sliders in all forms & colors;javascript,Flash,
+                    <img src="assets/img/temp_img_2.png"/>
+                    you name it!We`ve got it! But the best part is that they can be easily
+                    modified to fit your company`s look & feel.</p>
+                <img src="assets/img/ico_plus.png">&nbsp;&nbsp;<a href="#">more details</a>
+            </div>
+            <div class="image-text1_box">
+                <a href="#"><span>Multiple Colors & Slider options</span></a><br>
+                <p>
+                    Sliders in all forms & colors;javascript,Flash,
+                    <img src="assets/img/temp_img_3.png"/>
+                    you name it!We`ve got it! But the best part is that they can be easily
+                    modified to fit your company`s look & feel.
+                </p>
+                <img src="assets/img/ico_plus.png">&nbsp;&nbsp;<a href="#">more details</a>
+            </div>
+
+        </div>
+        <!--图文一结束-->
+        <!--图文二--动态文字展示开始-->
+        <div class="image-text2">
+            <div class="image-text2_bigbox">
+                <div class="image-text2_box1">
+                    <p><span>WHAT OTHERS SAY ABOUT US:</span></p>
+                    <!--文字信息切换开始-->
+                    <div id="contain">
+
+                        <div class="image-text2_box1_aaa">Over the last eighteen months our sales have increased
+                            three-fold since the launch of ournew
+                            web site. We have to say it has made us delighted we chose Envision.
+                            <p>GEORGE MANSION, FOUNDER SILICON APP INC</p>
+                        </div>
+
+                        <div class="image-text2_box1_bbb">To me, ThemeFuse themes are like designer clothes for your
+                            website. I’d love to get a whole
+                            closet full of them.
+                            <p> Marissa, Seo Marketing Tips</p>
+                        </div>
+
+                    </div>
+                    <!--文字信息切换结束-->
+                    <!--搜索框开始-->
+                    <div class="image-text2_box2 container">
+                        <img src="assets/img/ribbon_mail.png"><span>Stay in touch with us!</span>
+                        <p>Thank you for your subscription.</p>
+                        <div><input type="text" placeholder="ENTER your email"><a href="#"><img
+                                src="assets/img/search_submit.png" style="height: 24px;margin-bottom: -4px"></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--搜索框结束-->
+        <!--图文二--动态文字展示结束-->
+        <!--图文三开始-->
+        <div class="container">
+            <!--左边内容开始-->
+            <div class="image-text3">
+                <!--tab标题开始-->
+                <ul class="nav nav-tabs" role="tablist" id="myTab1">
+                    <li role="presentation" class="active"><a href="#home1" role="tab"
+                                                              data-toggle="tab">Home</a>
+                    </li>
+                    <li role="presentation"><a href="#profile1" role="tab" data-toggle="tab">Profile</a>
+                    </li>
+                    <li role="presentation"><a href="#messages1" role="tab" data-toggle="tab">Messages</a>
+                    </li>
+                </ul>
+                <!--tab标题结束-->
+
+                <!--tab内容开始-->
+                <div class="tab-content image-text3_content">
+                    <div role="tabpanel" class="tab-pane active" id="home1">
+                        <div class="image-text3_content_div">
+                            <img src="assets/img/gallery_img_4.jpg">
+                            <a href="#"><span>Creative webdesign</span></a><br>
+                            The point of using Lorem Ipsum is that it has a near “more-or-less” normal and
+                            distribution of letters.
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="profile1">
+                        <div class="image-text3_content_div"><img src="assets/img/gallery_img_3.jpg"><a
+                                href="#"><span>Creative webdesign</span></a><br>
+                            The point of using Lorem Ipsum is that it has a near “more-or-less” normal and
+                            distribution of letters.
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="messages1">
+                        <div class="image-text3_content_div"><img src="assets/img/gallery_img_2.jpg"><a
+                                href="#"><span>Creative webdesign</span></a><br>
+                            The point of using Lorem Ipsum is that it has a near “more-or-less” normal and
+                            distribution of letters.
+                        </div>
+                    </div>
+                </div>
+                <!--tab内容结束-->
+
+            </div>
+            <!--左边内容结束-->
+
+            <!--右边内容开始-->
+            <div class="image-text3">
+                <ul class="nav nav-tabs" role="tablist" id="myTab2">
+                    <li role="presentation" class="active"><a href="#home2" role="tab"
+                                                              data-toggle="tab">Home</a>
+                    </li>
+                    <li role="presentation"><a href="#profile2" role="tab" data-toggle="tab">Profile</a>
+                    </li>
+                    <li role="presentation"><a href="#messages2" role="tab" data-toggle="tab">Messages</a>
+                    </li>
+                </ul>
+
+                <div class="tab-content image-text3_content">
+                    <div role="tabpanel" class="tab-pane active" id="home2">
+                        <div class="image-text3_content_div">
+                            <img src="assets/img/gallery_img_2.jpg">
+
+                            <a href="#"><span>Creative webdesign</span></a><br>
+                            The point of using Lorem Ipsum is that it has a near “more-or-less” normal and
+                            distribution of letters.
+                        </div>
+                    </div>
+
+                    <div role="tabpanel" class="tab-pane" id="profile2">
+                        <div class="image-text3_content_div"><img
+                                src="assets/img/gallery_img_3.jpg">
+
+                            <a href="#"><span>Creative webdesign</span></a><br>
+                            The point of using Lorem Ipsum is that it has a near “more-or-less” normal and
+                            distribution of letters.
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="messages2">
+                        <div class="image-text3_content_div"><img
+                                src="assets/img/gallery_img_4.jpg">
+
+                            <a href="#"><span>Creative webdesign</span></a><br>
+                            The point of using Lorem Ipsum is that it has a near “more-or-less” normal and
+                            distribution of letters.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--右边内容结束-->
+
+
+        </div>
+        <!--图文三结束-->
+    </ion-pane>
+    <!--内容区结束-->
+    <!--脚注-->
+    <div class="footer row">
+        <div class="text-center footer-text">
+            <div class="col-xs-6"><h5>What we do</h5></div>
+            <div class="col-xs-6"><h5>Who We Are</h5></div>
+        </div>
+        <div class="footer-body">
+            <div class="col-xs-6">
+                <ul>
+                    <li><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;Bon Apetit</li>
+                    <li><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;Online Marketing</li>
+                    <li><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;Website Design</li>
+                    <li><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;Strategy</li>
+                    <li><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;E-Learning</li>
+                </ul>
+            </div>
+            <div class="col-xs-6">
+                <ul>
+                    <li><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;About us</li>
+                    <li><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;Our History</li>
+                    <li><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;Art Gallery</li>
+                    <li><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;The Mission</li>
+                </ul>
+            </div>
+            <div class="col-xs-7">
+                <div class="img-social container">
+                    <img src="assets/img/social_icons.png"/>
+                </div>
+            </div>
+            <div class="col-xs-12 text-center">
+                @2013 schinaz.com.please don't steall
+            </div>
+        </div>
+    </div>
+    <!--脚注-->
+</body>
+</html>
+<script>
+    var ifShowOne=true;
+    $(function () {
+        $('#myTab1 a:first').tab('show');
+        $('#myTab2 a:first').tab('show');
+        setInterval(setTime, 2000);
+    });
+    function setTime() {
+        $("#contain").append($("#contain").firstChild);
+        if(!ifShowOne){
+            $("#contain div:first").first().css("display","block");
+            $("#contain div:last").last().css("display","none");
+            ifShowOne=true;
+        }else{
+            $("#contain div:first").first().css("display","none");
+            $("#contain div:last").last().css("display","block");
+            ifShowOne=false;
+        }
+    }
+    $('[data-sidenav]').sidenav();
+</script>

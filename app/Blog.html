@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myapp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Blog</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
+    <link href="assets/dist/sidenav.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="assets/css/Blog.css">
+    <link rel="stylesheet" href="assets/css/header.css"/>
+    <link rel="stylesheet" href="assets/css/footer.css"/>
+    <!--jquery-->
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../bower_components/ionic/release/js/ionic.min.js"></script>
+    <script src="../bower_components/ionic/release/js/ionic.bundle.min.js"></script>
+    <script src="assets/dist/sidenav.min.js"></script>
+    <!--B3-->
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!--angular-->
+    <script src="../bower_components/angular/angular.min.js"></script>
+    <!--angular路由-->
+    <script src="../bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <!--模块顺序【1】-->
+    <script src="app.js"></script>
+    <!--路由表-->
+    <script src="router/uiRouter.js"></script>
+    <script src="run/run.js"></script>
+    <script src="server/basePath.js"></script>
+    <!--其他控制器-->
+    <script src="controller/indexCtrl.js"></script>
+</head>
+<body>
+    <!--侧边栏-->
+    <nav class="sidenav" data-sidenav data-sidenav-toggle="#sidenav-toggle">
+        <div class="sidenav-header">
+            <img src="assets/img/logo.png">
+        </div>
+        <ul class="sidenav-menu">
+            <li>
+                <a href="javascript:;" data-sidenav-dropdown-toggle class="active">
+                    <span>Sliders</span>
+                </a>
+
+                <ul class="sidenav-dropdown" data-sidenav-dropdown>
+                    <li><a href="index1.html"><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;Animated Slider</a></li>
+                    <li><a href="index2.html"><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;Nivo Slider</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;" data-sidenav-dropdown-toggle class="active">
+                    <span>Pages</span>
+                </a>
+
+                <ul class="sidenav-dropdown" data-sidenav-dropdown>
+                    <li><a href="siderbar.html"><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;page-sidebar</a></li>
+                    <li><a href="PricingPage.html"><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;page-pricing</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;" data-sidenav-dropdown-toggle class="active">
+                    <span>Styles</span>
+                </a>
+                <ul class="sidenav-dropdown" data-sidenav-dropdown>
+                    <li><a href="CustomFonts.html"><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;style-typography</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;" data-sidenav-dropdown-toggle class="active">
+                    <span>Portfolio</span>
+                </a>
+                <ul class="sidenav-dropdown" data-sidenav-dropdown>
+                    <li><a href="portfolio-1cols.html"><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;portfolio-1cols</a></li>
+                    <li><a href="portfolio-2cols.html"><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;portfolio-1cols</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="BlogDetailedArticlel.html" class="active">
+                    <span>Blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="Contact.html" class="active">
+                    <span>Contact</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!--侧边栏-->
+    <!--导航条-->
+    <nav class="navbar navbar-inverse navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#"><img src="assets/img/logo.png" width="140px"></a>
+                <a href="javascript:;" class="toggle navbar-brand aaa" id="sidenav-toggle"><i class="fa fa-list-ul"></i></a>
+            </div>
+        </div>
+    </nav>
+    <!--导航条-->
+    <!--图标搜索区开始-->
+    <ion-content>
+        <ion-scroll zooming="false" direction="y">
+            <div class="welcome-bar">
+                <div class="welcome-bar-left">
+                    <div class="row">
+                        <div class="col-xs-3 text-right col-lg-2">
+                            <img src="assets/img/icon_blog.png"/>
+                        </div>
+                        <div class="col-xs-9 col-lg-4">
+
+                            <h1>Welcome to our <span>Blog</span></h1>
+                            <span>Category subtitle</span>
+                        </div>
+                        <div class="col-xs-12 text-center col-lg-6">
+                            <form class="subForm">
+                                <div class="input-div">
+                                    <input type="text" class="subText" placeholder="Search">
+                                    <input type="image" class="subBtn" src="assets/img/search_submit.png"  align="absmiddle">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ion-scroll>
+    </ion-content>
+    <!--图标搜索区结束-->
+     <!--内容区开始-->
+    <div class="row content">
+        <!--内容区第一块-->
+        <div class="col-xs-10">
+            <h2>New project coming next month. It’s called freshFolio. See what is this whole thing all about.</h2>
+        </div>
+        <div class="col-xs-2 content-img-span">
+                <img src="assets/img/icon_comments.png">
+                <a href="#">12</a>
+        </div>
+        <div class="col-xs-12">
+            <p>4 February, 2014-Food for thought</p>
+        </div>
+        <div class="col-xs-12">
+            <div class="box-img">
+                <img src="assets/img/blog_img_1.jpg " width="100%"/>
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <div class="container">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry’s <strong>standard dummy</strong> text ever since the 1500s,
+                when an <em>unknown printer</em> took a galley of type and scrambled it to make a type specimen book.
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <div class="container container-content">
+                <a href="#"> Continue reading</a>
+                |
+                <a href="#"> Join the discussion</a>
+            </div>
+        </div>
+        <!--内容区第一块-->
+
+        <!--内容区第二块-->
+        <div class="col-xs-10">
+            <h2>WordPress study on trends and high vibes</h2>
+        </div>
+        <div class="col-xs-2 content-img-span">
+            <img src="assets/img/icon_comments.png">
+            <a href="#">23</a>
+        </div>
+        <div class="col-xs-12">
+            <p>3 April, 2012-Blog</p>
+        </div>
+        <div class="container">
+            <div class="col-xs-7">
+                Lorem Ipsum has been theindustry’s
+                standard dummy text ever since the 1500s,
+                when an unknown printer took a galley of type.
+            </div>
+            <div class="col-xs-5" style="padding: 0">
+                <img src="assets/img/blog_img_2.jpg" width="100%" style="padding: 10px;background-color: #FFFFFF"/>
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <div class="container container-content">
+                <a href="#"> Continue reading</a>
+                |
+                <a href="#"> Join the discussion</a>
+            </div>
+        </div>
+        <!--内容区第二块-->
+        <!--内容区第三块-->
+        <div class="col-xs-10">
+            <h2>WordPress: PHP 4 and MySQL 4 End of Life Announcement and categories selection</h2>
+        </div>
+        <div class="col-xs-2 content-img-span">
+            <img src="assets/img/icon_comments.png">
+            <a href="#">5</a>
+        </div>
+        <div class="col-xs-12">
+            <p>4 February, 2013-Food for thought</p>
+        </div>
+        <div class="container">
+            <div class="col-xs-5">
+                <img src="assets/img/blog_img_3.jpg" width="100%" style="padding: 10px;background-color: #FFFFFF"/>
+            </div>
+            <div class="col-xs-7" style="padding:0">
+                Our approach with WordPress has always been to make
+                it run on common server configurations. We want users
+                to have flexibility
+            </div>
+        </div>
+        <div class="col-xs-12 ">
+            <div class="container">
+                Our approach with WordPress has always been to make
+                it run on common server configurations.
+                We want users to have flexibility when choosing a host for
+                their precious content. Because of this strategy,
+                lorem ipsum dolor sit WordPress!
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <div class="container container-content">
+                <a href="#"> Continue reading</a>
+                |
+                <a href="#"> Join the discussion</a>
+            </div>
+        </div>
+        <!--内容区第三块-->
+        <!--内容区第四块-->
+        <div class="col-xs-10">
+            <h2>New project coming next month. It’s called freshFolio. See whats this is all about.</h2>
+        </div>
+        <div class="col-xs-2 content-img-span">
+            <img src="assets/img/icon_comments.png">
+            <a href="#">6</a>
+        </div>
+        <div class="col-xs-12">
+            <p>4 January, 2012-Funny stuff</p>
+        </div>
+        <div class="col-xs-10">
+            <div class="container">
+                <textarea rows="10" style="width: 100%">
+
+                </textarea>
+            </div>
+        </div>
+        <div class="col-xs-12 ">
+            <div class="container">
+                Main title of the paragraph (h1) Image Frame,
+                position center Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Image Frame with float left Duis aute irure dolor […]
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <div class="container container-content">
+                <a href="#"> Continue reading</a>
+                |
+                <a href="#"> Join the discussion</a>
+            </div>
+        </div>
+        <!--内容区第四块-->
+        <div class="col-xs-12 text-center">
+            <span class="pagination">
+                <a class="page-prev" href="BlogDetailedArticlel.html">
+                    <img src="assets/img/pagination_prev.gif"/>
+                </a>
+                <span class="inner">
+                </span>
+                <a href="BlogDetailedArticlel.html">1</a>
+                <a href="Blog.html">2</a>
+            </span>
+        </div>
+    </div>
+    <!--内容区结束-->
+    <!--脚注-->
+    <div class="footer row">
+        <div class="text-center footer-text">
+            <div class="col-xs-6"><h5>What we do</h5></div>
+            <div class="col-xs-6"><h5>Who We Are</h5></div>
+        </div>
+        <div class="footer-body">
+            <div class="col-xs-6">
+                <ul>
+                    <li><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;Bon Apetit</li>
+                    <li><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;Online Marketing</li>
+                    <li><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;Website Design</li>
+                    <li><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;Strategy</li>
+                    <li><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;E-Learning</li>
+                </ul>
+            </div>
+            <div class="col-xs-6">
+                <ul>
+                    <li><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;About us</li>
+                    <li><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;Our History</li>
+                    <li><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;Art Gallery</li>
+                    <li><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;The Mission</li>
+                </ul>
+            </div>
+            <div class="col-xs-7">
+                <div class="img-social container">
+                    <img src="assets/img/social_icons.png"/>
+                </div>
+            </div>
+            <div class="col-xs-12 text-center">
+                @2013 schinaz.com.please don't steall
+            </div>
+        </div>
+    </div>
+    <!--脚注-->
+</body>
+</html>
+<script>
+    $('[data-sidenav]').sidenav();
+    angular.module('myapp', ['ionic']);
+</script>

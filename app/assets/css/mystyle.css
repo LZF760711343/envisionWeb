@@ -1,0 +1,119 @@
+/*轮播图开始*/
+.banner{width:100%;overflow:hidden;height:14em;position:relative;border:0;margin:0;}
+.banList{height:14em;width: 100%;padding:0;}
+.banList li{list-style-type:none;height:14em;opacity:0;position:absolute;transform:scale(0);transition:transform 0.5s ease 0s, opacity 1.5s ease 0s;z-index:1;width: 100%}
+.banList li.active{list-style-type:none;opacity:1;transform:scale(1);z-index:2;width: 100%}
+/*导航球设置*/
+.fomW{position:absolute;bottom:0.5em;left:50%;height:20px;z-index:9;width:1000px;margin-left:-500px}
+.jsNav{text-align:center;}
+.jsNav a{display:inline-block;background:#fff;width:1em;height:1em;border-radius:50%;margin:0 5px;}
+.jsNav a.current{background:#fc8f0f;cursor:pointer}
+/*轮播图结束*/
+
+
+/*全局颜色设置*/
+body{
+    background:#f8f7f6;
+}
+
+
+/*图文一开始*/
+.image-text1{
+    padding: 1.8%;
+}
+.image-text1_box{
+    overflow:hidden;
+    margin-top: 5%;
+}
+.image-text1 span{
+    font-size: 1.3em;
+}
+.image-text1 p img{
+    float: right;
+}
+/*图文一结束*/
+
+/*图文二--动态文字展示*/
+.image-text2{
+
+    padding: 1.8%;
+    margin-top: 5%;
+}
+.image-text2_bigbox{
+    background: #ffffff;
+    border-radius: 2%;
+    padding: 1%;
+}
+.image-text2_box1{
+
+}
+.image-text2_box span{
+    font-size: 1.3em;
+}
+.image-text2_box2{
+    border-radius: 2%;
+    background:#f8f7f6;
+    width: 95%;
+    margin-bottom: 3%;
+    -webkit-box-shadow:1px 1px 5px #333333;
+    -moz-box-shadow:1px 1px 5px #333333;
+    padding: 0% 8%;
+}
+.image-text2_box2 img{
+    position: relative;
+    top:-4px;
+    right: 4px;
+}
+.image-text2_box2 span{
+    font-size: 1.3em;
+}
+.image-text2_box2 input{
+    margin-bottom: 5%;
+    border-radius: 5px;
+}
+/*动态文字切换*/
+.image-text2_box1_aaa{
+    display: block;
+}
+.image-text2_box1_bbb{
+    display: none;
+}
+/*图文二结束*/
+
+
+/*图文三开始*/
+.image-text3{
+    padding: 1.8%;
+}
+.image-text3 img{
+    float: left;
+    clear: both;
+}
+.image-text3_text{
+    margin-left: 15%;
+    float: right;
+    clear: both;
+}
+.image-text3_content{
+    height: 150px;
+}
+.image-text3_content span{
+    font-size: 1.1em;
+}
+
+.image-text3_content_div{
+    border-radius: 2%;
+    padding: 6% 2%;
+    height: 140px;
+    background: #ffffff;
+    overflow:hidden;
+}
+.image-text3_content_div img{
+    margin-right: 1em;
+}
+/*图文三结束*/
+
+/*SWIPER轮播图的影子距离*/
+.swiper-container-cube .swiper-cube-shadow{
+    bottom: 9em!important;
+}

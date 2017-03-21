@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myapp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>portfolio</title>
+    <!--CSS-->
+    <link href="assets/dist/sidenav.min.css" rel="stylesheet"/><!--侧滑菜单效果-->
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/dist/aos.css" /><!--动效-->
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/portfolio-2cols.css">
+    <!--jquery-->
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <!--侧滑菜单效果-->
+    <script src="assets/dist/sidenav.min.js"></script>
+
+    <!--B3-->
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!--angular-->
+    <script src="../bower_components/angular/angular.min.js"></script>
+    <!--angular路由-->
+    <script src="../bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <!--ionic-->
+    <script src="../bower_components/ionic/release/js/ionic.min.js"></script>
+    <script src="../bower_components/ionic/release/js/ionic.bundle.min.js"></script>
+    <!--模块顺序【1】-->
+    <script src="app.js"></script>
+    <!--路由表-->
+    <script src="router/uiRouter.js"></script>
+    <script src="run/run.js"></script>
+    <script src="server/basePath.js"></script>
+    <!--其他控制器-->
+    <script src="controller/indexCtrl.js"></script>
+    <!--其他控制器-->
+    <script src="controller/indexCtrl.js"></script>
+</head>
+<body>
+<!--侧边栏-->
+<nav class="sidenav" data-sidenav data-sidenav-toggle="#sidenav-toggle">
+    <div class="sidenav-header">
+        <img src="assets/img/logo.png">
+    </div>
+    <ul class="sidenav-menu">
+        <li>
+            <a href="javascript:;" data-sidenav-dropdown-toggle class="active">
+                <span>Sliders</span>
+            </a>
+
+            <ul class="sidenav-dropdown" data-sidenav-dropdown>
+                <li><a href="siderbar.html"><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;Animated Slider</a></li>
+                <li><a href="PricingPage.html"><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;Nivo Slider</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="javascript:;" data-sidenav-dropdown-toggle class="active">
+                <span>Pages</span>
+            </a>
+
+            <ul class="sidenav-dropdown" data-sidenav-dropdown>
+                <li><a href="CustomFonts.html"><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;page-sidebar</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="javascript:;" data-sidenav-dropdown-toggle class="active">
+                <span>Styles</span>
+            </a>
+            <ul class="sidenav-dropdown" data-sidenav-dropdown>
+                <li><a href="portfolio-1cols.html"><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;style-typography</a></li>
+                <li><a href="portfolio-2cols.html"><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;style-shortcodes</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="javascript:;" data-sidenav-dropdown-toggle class="active">
+                <span>Portfolio</span>
+            </a>
+            <ul class="sidenav-dropdown" data-sidenav-dropdown>
+                <li><a href="portfolio-1cols.html"><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;portfolio-1cols</a></li>
+                <li><a href="portfolio-2cols.html"><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;portfolio-2cols</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="BlogDetailedArticlel.html" class="active">
+                <span>Blog</span>
+            </a>
+        </li>
+        <li>
+            <a href="Contact.html" class="active">
+                <span>Contact</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+<!--侧边栏结束-->
+<!--导航条-->
+<nav class="navbar navbar-inverse navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#"><img src="assets/img/logo.png" width="140px"></a>
+            <a href="javascript:;" class="toggle navbar-brand aaa" id="sidenav-toggle"><i class="fa fa-list-ul"></i></a>
+        </div>
+    </div>
+</nav>
+<!--导航条-->
+<ion-content>
+    <ion-scroll zooming="false" direction="y" >
+        <!--内容区域-->
+        <section class="section section--code">
+            <!--图标搜索区开始-->
+            <div class="portfolio-bar">
+                <div class="portfolio-bar-left">
+                    <div class="row">
+                        <div class="col-xs-3 text-right col-lg-2">
+                            <img src="../app/assets/img/icon_portfolio.png"/>
+                        </div>
+                        <div class="col-xs-9 col-lg-4">
+                            <h1>Portfolio <span>gallery </span></h1>
+                            <span>2 column with sidebar</span>
+                        </div>
+                        <div class="col-xs-12 text-center col-lg-6">
+                            <form class="subForm">
+                                <div class="input-div">
+                                    <input type="text" class="subText" placeholder="Search">
+                                    <input type="image" class="subBtn" src="assets/img/search_submit.png"  align="absmiddle">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--图标搜索区结束-->
+            <!--缩略图区域开始-->
+            <div class="container">
+                <div class="row">
+                    <!--第一行-->
+                    <!--图文混排列表1-->
+                    <div id="portfolio-2cols-thumbnail-one" class="col-xs-12 col-md-4 col-sm-6 col-lg-3 portfolio-2cols-row code code--small code--left" aos="fade-right">
+                        <!--响应式图片，带边框-->
+                        <div class="thumbnail">
+                            <!--图片-->
+                            <a href="#" class="">
+                                <img src="assets/img/portfolio_2_1.jpg" alt="">
+                            </a>
+                            <!--介绍-->
+                            <div class="caption">
+                                <h4>Art Gallery</h4>
+                                <p>We’ve crafted this wp theme with a showcase portfolio in mind. It can be easily used by web agencies / studios or design firms.</p>
+                                <a href="#" class="portfolio-2cols-thumbnail" >
+                                    <span>View project</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-2cols-titleImg">
+                           <img src="assets/img/ribbon_new.png">
+                        </div>
+                    </div>
+
+                <!--第二行-->
+                    <!--图文混排列表2-->
+                    <div id="portfolio-2cols-thumbnail-two" class="col-xs-12 col-md-4 col-sm-6 col-lg-3 code code--small code--right" aos="fade-left">
+                        <!--响应式图片，带边框-->
+                        <div class="thumbnail">
+                            <!--图片-->
+                            <a href="#">
+                                <img src="assets/img/portfolio_2_2.jpg" alt="">
+                            </a>
+                            <!--介绍-->
+                            <div class="caption">
+                                <h4>SiliconApp</h4>
+                                <p>We’ve crafted this wp theme with a showcase portfolio in mind. It can be easily used by web agencies / studios or design firms.</p>
+                                <a href="#" class="portfolio-2cols-thumbnail" >
+                                    <span>View project</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                <!--缩略图区域开始-->
+                <!--第三行-->
+                    <!--图文混排列表3-->
+                    <div id="portfolio-2cols-thumbnail-three" class="col-xs-12 col-md-4 col-sm-6 col-lg-3 code code--small code--left" aos="fade-right">
+                        <!--响应式图片，带边框-->
+                        <div class="thumbnail">
+                            <!--图片-->
+                            <a href="#">
+                                <img src="assets/img/portfolio_2_3.jpg" alt="">
+                            </a>
+                            <!--介绍-->
+                            <div class="caption">
+                                <h4>Web Studio</h4>
+                                <p>We’ve crafted this wp theme with a showcase portfolio in mind. It can be easily used by web agencies / studios or design firms.</p>
+                                <a href="#" class="portfolio-2cols-thumbnail" >
+                                    <span>View project</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                <!--第四行-->
+                    <!--图文混排列表4-->
+                    <div id="portfolio-2cols-thumbnail-four" class="col-xs-12 col-md-4 col-sm-6 col-lg-3 code code--small code--right" aos="fade-left">
+                        <!--响应式图片，带边框-->
+                        <div class="thumbnail">
+                            <!--图片-->
+                            <a href="#">
+                                <img src="assets/img/portfolio_2_4.jpg" alt="">
+                            </a>
+                            <!--介绍-->
+                            <div class="caption">
+                                <h4>Creative Juice</h4>
+                                <p>We’ve crafted this wp theme with a showcase portfolio in mind. It can be easily used by web agencies / studios or design firms.</p>
+                                <a href="#" class="portfolio-2cols-thumbnail" >
+                                    <span>View project</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                <!--第五行-->
+                    <!--图文混排列表5-->
+                    <div id="portfolio-2cols-thumbnail-five" class="col-xs-12 col-md-4 col-sm-6 col-lg-3 code code--small code--left" aos="fade-right">
+                        <!--响应式图片，带边框-->
+                        <div class="thumbnail">
+                            <!--图片-->
+                            <a href="#">
+                                <img src="assets/img/portfolio_2_5.jpg" alt="">
+                            </a>
+                            <!--介绍-->
+                            <div class="caption">
+                                <h4>Art Gallery</h4>
+                                <p>We’ve crafted this wp theme with a showcase portfolio in mind. It can be easily used by web agencies / studios or design firms.</p>
+                                <a href="#" class="portfolio-2cols-thumbnail" >
+                                    <span>View project</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                <!--第六行-->
+                    <!--图文混排列表6-->
+                    <div id="portfolio-2cols-thumbnail-six" class="col-xs-12 col-md-4 col-sm-6 col-lg-3 code code--small code--right" aos="fade-left">
+                        <!--响应式图片，带边框-->
+                        <div class="thumbnail">
+                            <!--图片-->
+                            <a href="#">
+                                <img src="assets/img/portfolio_2_6.jpg" alt="">
+                            </a>
+                            <!--介绍-->
+                            <div class="caption">
+                                <h4>Silicon Features</h4>
+                                <p>We’ve crafted this wp theme with a showcase portfolio in mind. It can be easily used by web agencies / studios or design firms.</p>
+                                <a href="#" class="portfolio-2cols-thumbnail" >
+                                    <span>View project</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--缩略图部分结束-->
+            <!--分页-->
+            <div class="row">
+                <div class="col-xs-12 text-center ">
+                    <span class="pagination">
+                        <a href="#" class="page-prev">
+                            <img src="assets/img/pagination_prev.gif" alt="">
+                        </a>
+                        <a href="#">1</a>
+                        <a href="#">2</a>
+                        <span class="inner">
+                        </span>
+                        <a href="#" class="page-next">
+                            <img src="assets/img/pagination_next.gif" alt="">
+                        </a>
+                    </span>
+                </div>
+            </div>
+
+            <!--分页结束-->
+        </section>
+    </ion-scroll>
+</ion-content>
+<!--脚注-->
+<div class="footer row">
+    <div class="text-center footer-text">
+        <div class="col-xs-6"><h5>What we do</h5></div>
+        <div class="col-xs-6"><h5>Who We Are</h5></div>
+    </div>
+    <div class="footer-body">
+        <div class="col-xs-6">
+            <ul>
+                <li><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;Bon Apetit</li>
+                <li><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;Online Marketing</li>
+                <li><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;Website Design</li>
+                <li><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;Strategy</li>
+                <li><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;E-Learning</li>
+            </ul>
+        </div>
+        <div class="col-xs-6">
+            <ul>
+                <li><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;About us</li>
+                <li><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;Our History</li>
+                <li><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;Art Gallery</li>
+                <li><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;The Mission</li>
+            </ul>
+        </div>
+        <div class="col-xs-7">
+            <div class="img-social container">
+                <img src="assets/img/social_icons.png"/>
+            </div>
+        </div>
+        <div class="col-xs-12 text-center">
+            @2013 schinaz.com.please don't steall
+        </div>
+    </div>
+</div>
+<!--脚注-->
+</body>
+</html>
+<script src="assets/dist/aos.js"></script>
+<script>
+    $('[data-sidenav]').sidenav();//脚注
+    //    动效
+    AOS.init({
+        easing: 'ease-out-back',
+        duration: 1000
+    });
+</script>

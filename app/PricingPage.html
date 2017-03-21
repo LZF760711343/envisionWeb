@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myapp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Pricing Page</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
+    <link href="assets/dist/sidenav.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="assets/css/Pricing.css">
+    <link rel="stylesheet" href="assets/css/header.css"/>
+    <link rel="stylesheet" href="assets/css/footer.css"/>
+    <!--jquery-->
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="assets/dist/sidenav.min.js"></script>
+    <!--B3-->
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!--angular-->
+    <script src="../bower_components/angular/angular.min.js"></script>
+    <!--angular路由-->
+    <script src="../bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <!--模块顺序【1】-->
+    <script src="app.js"></script>
+    <!--路由表-->
+    <script src="router/uiRouter.js"></script>
+    <script src="run/run.js"></script>
+    <script src="server/basePath.js"></script>
+    <!--其他控制器-->
+    <script src="controller/indexCtrl.js"></script>
+</head>
+<body>
+    <!--侧边栏-->
+    <nav class="sidenav" data-sidenav data-sidenav-toggle="#sidenav-toggle">
+        <div class="sidenav-header">
+            <img src="assets/img/logo.png">
+        </div>
+        <ul class="sidenav-menu">
+            <li>
+                <a href="javascript:;" data-sidenav-dropdown-toggle class="active">
+                    <span>Sliders</span>
+                </a>
+                <ul class="sidenav-dropdown" data-sidenav-dropdown>
+                    <li><a href="index1.html"><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;Animated Slider</a>
+                    </li>
+                    <li><a href="index2.html"><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;Nivo Slider</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;" data-sidenav-dropdown-toggle class="active">
+                    <span>Pages</span>
+                </a>
+                <ul class="sidenav-dropdown" data-sidenav-dropdown>
+                    <li><a href="siderbar.html"><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;page-sidebar</a>
+                    </li>
+                    <li><a href="PricingPage.html"><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;page-pricing</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;" data-sidenav-dropdown-toggle class="active">
+                    <span>Styles</span>
+                </a>
+                <ul class="sidenav-dropdown" data-sidenav-dropdown>
+                    <li><a href="CustomFonts.html"><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;style-typography</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;" data-sidenav-dropdown-toggle class="active">
+                    <span>Portfolio</span>
+                </a>
+                <ul class="sidenav-dropdown" data-sidenav-dropdown>
+                    <li><a href="portfolio-1cols.html"><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;portfolio-1cols</a>
+                    </li>
+                    <li><a href="portfolio-2cols.html"><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;portfolio-2cols</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="BlogDetailedArticlel.html" class="active">
+                    <span>Blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="Contact.html" class="active">
+                    <span>Contact</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!--侧边栏-->
+    <!--导航条-->
+    <nav class="navbar navbar-inverse navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#"><img src="assets/img/logo.png" width="140px"></a>
+                <a href="javascript:;" class="toggle navbar-brand aaa" id="sidenav-toggle"><i class="fa fa-list-ul"></i></a>
+            </div>
+        </div>
+    </nav>
+    <!--导航条-->
+    <!--图标搜索区开始-->
+    <div class="welcome-bar">
+        <div class="welcome-bar-left">
+            <div class="row">
+                <div class="col-xs-3 text-right col-lg-2">
+                    <img src="assets/img/icon_contact.png"/>
+                </div>
+                <div class="col-xs-9 col-lg-4">
+                    <h1>Get in <span>touch </span>with us!</h1>
+                    <span>Page subtitle if not set breadcrumb</span>
+                </div>
+                <div class="col-xs-12 text-center col-lg-6">
+                    <form class="subForm">
+                        <input type="text" class="subText" placeholder="Type for search">
+                        <input type="submit" class="subBtn">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--图标搜索区结束-->
+    <!--内容区开始-->
+    <div class="middle">
+        <div class="container">
+            <table class="" width="100%" border="0" cellspacing="0" cellpadding="0">
+                <thead>
+                <tr>
+                    <td></td>
+                    <td class="td-1">
+                        <div class=" td-1-imgs_1" style="border-radius: 6px 0 0 0;">Trial plan</div>
+                    </td>
+                    <td class="td-1">
+                        <div class="td-1-imgs">Start-up</div>
+                    </td>
+                    <td class="td-1">
+                        <div class="td-1-imgs" style="border-radius: 0 6px 0 0;">Enterprise</div>
+                    </td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td></td>
+                    <td class="td-2 td-2_1 col-xs-2">
+                        <div class="td-2-img"><img src="assets/img/table_icon_1.png" width="70" height="64"></div>
+                        <div class="td-2-text"><strong>free</strong></div>
+                    </td>
+                    <td class="td-2 td-2_1">
+                        <div class="td-2-img"><img src="assets/img/table_icon_2.png" width="70" height="64"></div>
+                        <div class="td-2-text"><span>$</span><strong>39</strong><em>/mo</em>
+                        </div>
+                    </td>
+                    <td class="td-2">
+                        <div class="td-2-img"><img src="assets/img/table_icon_4.png" width="70" height="64"></div>
+                        <div class="td-2-text"><span>$</span><strong>89</strong><em>/mo</em>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td-3 td-3_title td-3_1357">Live Support:</td>
+                    <td class="td-3 td-3_1"><img src="assets/img/list_icon_check.png" class=""></td>
+                    <td class="td-3 td-3_1"><img src="assets/img/list_icon_check.png" class=""></td>
+                    <td class="td-3 td-3_1"><img src="assets/img/list_icon_check.png" class=""></td>
+                </tr>
+                <tr>
+                    <td class="td-3 td-3_title">Enhanced security:</td>
+                    <td class="td-3 td-3_1"><img src="assets/img/list_icon_check.png" class=""></td>
+                    <td class="td-3 td-3_1"><img src="assets/img/list_icon_check.png" class=""></td>
+                    <td class="td-3 td-3_1"><img src="assets/img/list_icon_check.png" class=""></td>
+                </tr>
+                <tr>
+                    <td class="td-3 td-3_title td-3_1357">FTP Gateway:</td>
+                    <td class="td-3 td-3_1"><img src="assets/img/list_icon_check.png" class=""></td>
+                    <td class="td-3 td-3_1"><img src="assets/img/list_icon_check.png" class=""></td>
+                    <td class="td-3 td-3_1"><img src="assets/img/list_icon_check.png" class=""></td>
+                </tr>
+                <tr>
+                    <td class="td-3 td-3_title">No. of skins:</td>
+                    <td class="td-3 td-3_1">9</td>
+                    <td class="td-3 td-3_1">15</td>
+                    <td class="td-3 td-3_1">29</td>
+                </tr>
+                <tr>
+                    <td class="td-3 td-3_title td-3_1357">Adwords credit:</td>
+                    <td class="td-3 td-3_1"><img src="assets/img/list_icon_delete.png" class=""></td>
+                    <td class="td-3 td-3_1"><img src="assets/img/list_icon_check.png" class=""></td>
+                    <td class="td-3 td-3_1"><img src="assets/img/list_icon_check.png" class=""></td>
+                </tr>
+                <tr>
+                    <td class="td-3 td-3_title">Discount codes:</td>
+                    <td class="td-3 td-3_1"><img src="assets/img/list_icon_delete.png" class=""></td>
+                    <td class="td-3 td-3_1"><img src="assets/img/list_icon_delete.png" class=""></td>
+                    <td class="td-3 td-3_1"><img src="assets/img/list_icon_delete.png" class=""></td>
+                </tr>
+                <tr>
+                    <td class="td-3 td-3_title td-3_1357">Real – time stats:</td>
+                    <td class="td-3 td-3_1"><img src="assets/img/list_icon_delete.png" class=""></td>
+                    <td class="td-3 td-3_1"><img src="assets/img/list_icon_delete.png" class=""></td>
+                    <td class="td-3 td-3_1"><img src="assets/img/list_icon_delete.png" class=""></td>
+                </tr>
+                </tbody>
+                <tfoot>
+                <tr>
+                    <td></td>
+                    <td class="td-4 td-4_1"><a href="#" class="td-4_a"><span>Register for free</span></a>
+                    </td>
+                    <td class="td-4"><a href="#" class="td-4_a"><span>Sign up now</span></a>
+                    </td>
+                    <td class="td-4"><a href="#" class="td-4_a"><span>Sign up now</span></a>
+                    </td>
+                </tr>
+                </tfoot>
+            </table>
+            <div class="middle-br"></div>
+            <div>
+                <div>
+                    <h2>Frequently asked questions:</h2>
+                </div>
+                <div>
+                    <span>Q:</span>What’s thedifference between the standard and the developer packages?
+                </div>
+                <div>
+                    <span>A:</span>This has to be. One for all and all for one, Muskehounds are always ready. One for
+                    all and all for one, helping everybody. One for all and all for one, can sound pretty corny.
+                </div>
+                <div>
+                    <span>Q:</span>Do you offer themes for other Content Management Systems like Drupal, Joomla! or
+                    ExpressionEngine?
+                </div>
+                <div>
+                    <span>A:</span>Muskehounds are always ready. One for all and all for one, helping everybody. One for
+                    all and all for one, can sound pretty corny. If you’ve got a problem chum, think how it to be. One
+                    for all and all for one, Muskehounds are always ready. One for all and all for one, helping
+                    everybody lorem ipsum dolor sit amet.
+                </div>
+                <div>
+                    <span>Q:</span>How do i change the size and colors of the above Table of Prices?
+                </div>
+                <div>
+                    <span>A:</span>This has to be. One for all and all for one, Muskehounds are always ready. One for
+                    all and all for one, helping everybody. One for all and all for one, can sound pretty corny.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--内容区结束-->
+    <!--脚注-->
+    <div class="footer row">
+        <div class="text-center footer-text">
+            <div class="col-xs-6"><h5>What we do</h5></div>
+            <div class="col-xs-6"><h5>Who We Are</h5></div>
+        </div>
+        <div class="footer-body">
+            <div class="col-xs-6">
+                <ul>
+                    <li><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;Bon Apetit</li>
+                    <li><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;Online Marketing</li>
+                    <li><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;Website Design</li>
+                    <li><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;Strategy</li>
+                    <li><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;E-Learning</li>
+                </ul>
+            </div>
+            <div class="col-xs-6">
+                <ul>
+                    <li><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;About us</li>
+                    <li><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;Our History</li>
+                    <li><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;Art Gallery</li>
+                    <li><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;The Mission</li>
+                </ul>
+            </div>
+            <div class="col-xs-7">
+                <div class="img-social container">
+                    <img src="assets/img/social_icons.png"/>
+                </div>
+            </div>
+            <div class="col-xs-12 text-center">
+                @2013 schinaz.com.please don't steall
+            </div>
+        </div>
+    </div>
+    <!--脚注-->
+</body>
+</html>
+<script>$('[data-sidenav]').sidenav();</script>

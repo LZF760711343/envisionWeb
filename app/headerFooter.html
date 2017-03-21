@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Contact</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
+    <link href="assets/dist/sidenav.min.css" rel="stylesheet"/>
+    <!--jquery-->
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="assets/dist/sidenav.min.js"></script>
+    <!--B3-->
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!--angular-->
+    <script src="../bower_components/angular/angular.min.js"></script>
+    <!--angular路由-->
+    <script src="../bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <!--模块顺序【1】-->
+    <script src="app.js"></script>
+    <!--路由表-->
+    <script src="router/uiRouter.js"></script>
+    <script src="run/run.js"></script>
+    <script src="server/basePath.js"></script>
+    <!--其他控制器-->
+    <script src="controller/indexCtrl.js"></script>
+    <style>
+
+        body{
+            overflow-x: hidden;
+        }
+        /*取消导航条圆角*/
+        .navigation{
+            margin-bottom: 0;
+            border-radius: 0;
+            border: 0;
+        }
+        /*侧边栏样式*/
+        .sidenav-menu>li>a:hover{
+            text-decoration: none;
+        }
+        .sidenav-menu>li>ul>li>a:hover{
+            text-decoration: none;
+            color: #FFFFFF;
+        }
+        .sidenav-menu>li>ul>li>a>img{
+            width: 10px;
+        }
+        /*脚注*/
+        .footer>.footer-text{
+            padding-top: 5px;
+            height: 40px;
+            background-color: #2B2633;
+            border-top: 5px solid #222329;
+            color: #FFFFFF;
+            margin-bottom: 0;
+        }
+        .footer-body{
+            width: 100%;
+            height: 240px;
+            background-color:#2A2633;
+            color: #E3E3E3;
+        }
+        .footer-body>.col-xs-6{
+            padding: 0;
+        }
+        .footer-body>.col-xs-6>ul{
+            list-style: none;
+        }
+        .footer-body>.col-xs-6>ul>li{
+            margin-top: 5px;
+        }
+        .footer-body>div:last-child{
+            margin-top: 10px;
+        }
+        .img-social{
+            margin-top: 20px;
+            height: 28px;
+            width: 100%;
+            overflow: hidden;
+        }
+        /*------导航右边图标------*/
+        .aaa{
+            float: right!important;
+        }
+        @media (min-width: 768px) {
+            .aaa{
+                position: fixed;
+                right: 0;
+            }
+        }
+    </style>
+
+</head>
+
+<body class="container">
+<!--侧边栏-->
+<nav class="sidenav" data-sidenav data-sidenav-toggle="#sidenav-toggle">
+    <div class="sidenav-header">
+        <img src="assets/img/logo.png">
+    </div>
+    <ul class="sidenav-menu">
+        <li>
+            <a href="javascript:;" data-sidenav-dropdown-toggle class="active">
+                <span>Sliders</span>
+            </a>
+
+            <ul class="sidenav-dropdown" data-sidenav-dropdown>
+                <li><a href="javascript:;"><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;Animated Slider</a></li>
+                <li><a href="javascript:;"><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;Nivo Slider</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="javascript:;" data-sidenav-dropdown-toggle class="active">
+                <span>Pages</span>
+            </a>
+
+            <ul class="sidenav-dropdown" data-sidenav-dropdown>
+                <li><a href="javascript:;"><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;page-sidebar</a></li>
+                <li><a href="javascript:;"><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;page-pricing</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="javascript:;" data-sidenav-dropdown-toggle class="active">
+                <span>Styles</span>
+            </a>
+            <ul class="sidenav-dropdown" data-sidenav-dropdown>
+                <li><a href="javascript:;"><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;style-typography</a></li>
+                <li><a href="javascript:;"><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;style-shortcodes</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="javascript:;" data-sidenav-dropdown-toggle class="active">
+                <span>Portfolio</span>
+            </a>
+            <ul class="sidenav-dropdown" data-sidenav-dropdown>
+                <li><a href="javascript:;"><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;portfolio-1cols</a></li>
+                <li><a href="javascript:;"><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;portfolio-2cols</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="javascript:;" data-sidenav-dropdown-toggle class="active">
+                <span>Blog</span>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;" data-sidenav-dropdown-toggle class="active">
+                <span>Contact</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+<!--侧边栏-->
+<!--导航条-->
+<nav class="navbar navbar-inverse navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#"><img src="assets/img/logo.png" width="140px"></a>
+            <a href="javascript:;" class="toggle navbar-brand aaa" id="sidenav-toggle"><i class="fa fa-list-ul"></i></a>
+        </div>
+    </div>
+</nav>
+<!--导航条-->
+<!--脚注-->
+    <div class="footer row">
+          <div class="text-center footer-text">
+              <div class="col-xs-6"><h5>What we do</h5></div>
+              <div class="col-xs-6"><h5>Who We Are</h5></div>
+          </div>
+          <div class="footer-body">
+              <div class="col-xs-6">
+                  <ul>
+                      <li><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;Bon Apetit</li>
+                      <li><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;Online Marketing</li>
+                      <li><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;Website Design</li>
+                      <li><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;Strategy</li>
+                      <li><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;E-Learning</li>
+                  </ul>
+              </div>
+              <div class="col-xs-6">
+                  <ul>
+                      <li><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;About us</li>
+                      <li><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;Our History</li>
+                      <li><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;Art Gallery</li>
+                      <li><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;The Mission</li>
+                  </ul>
+              </div>
+              <div class="col-xs-7">
+                  <div class="img-social container">
+                      <img src="assets/img/social_icons.png"/>
+                  </div>
+              </div>
+              <div class="col-xs-12 text-center">
+                  @2013 schinaz.com.please don't steall
+              </div>
+          </div>
+    </div>
+<!--脚注-->
+<script>$('[data-sidenav]').sidenav();
+</script>
+</body>
+</html>

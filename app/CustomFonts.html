@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myapp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>CustonFonts</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/CustomFonts.css">
+    <link rel="stylesheet" href="assets/css/sidenav.min.css">
+    <link rel="stylesheet" href="assets/css/header.css"/>
+    <link rel="stylesheet" href="assets/css/footer.css"/>
+    <!--jquery-->
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <!--B3-->
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!--angular-->
+    <script src="../bower_components/angular/angular.min.js"></script>
+    <!--angular路由-->
+    <script src="../bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <!--模块顺序【1】-->
+    <script src="app.js"></script>
+    <script src="assets/dist/sidenav.min.js"></script>
+    <!--路由表-->
+    <script src="router/uiRouter.js"></script>
+    <script src="run/run.js"></script>
+    <script src="server/basePath.js"></script>
+    <!--其他控制器-->
+    <script src="controller/indexCtrl.js"></script>
+</head>
+<body>
+    <!--侧边栏-->
+    <nav class="sidenav" data-sidenav data-sidenav-toggle="#sidenav-toggle">
+        <div class="sidenav-header">
+            <img src="assets/img/logo.png">
+        </div>
+        <ul class="sidenav-menu">
+            <li>
+                <a href="javascript:;" data-sidenav-dropdown-toggle class="active">
+                    <span>Sliders</span>
+                </a>
+
+                <ul class="sidenav-dropdown" data-sidenav-dropdown>
+                    <li><a href="index1.html"><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;Animated Slider</a></li>
+                    <li><a href="index2.html"><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;Nivo Slider</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;" data-sidenav-dropdown-toggle class="active">
+                    <span>Pages</span>
+                </a>
+
+                <ul class="sidenav-dropdown" data-sidenav-dropdown>
+                    <li><a href="siderbar.html"><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;page-sidebar</a></li>
+                    <li><a href="PricingPage.html"><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;page-pricing</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;" data-sidenav-dropdown-toggle class="active">
+                    <span>Styles</span>
+                </a>
+                <ul class="sidenav-dropdown" data-sidenav-dropdown>
+                    <li><a href="CustomFonts.html"><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;style-typography</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;" data-sidenav-dropdown-toggle class="active">
+                    <span>Portfolio</span>
+                </a>
+                <ul class="sidenav-dropdown" data-sidenav-dropdown>
+                    <li><a href="portfolio-1cols.html"><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;portfolio-1cols</a></li>
+                    <li><a href="portfolio-2cols.html"><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;portfolio-2cols</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="BlogDetailedArticlel.html" class="active">
+                    <span>Blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="Contact.html" class="active">
+                    <span>Contact</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!--侧边栏-->
+    <!--导航条-->
+    <nav class="navbar navbar-inverse navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#"><img src="assets/img/logo.png" width="140px"></a>
+                <a href="javascript:;" class="toggle navbar-brand aaa" id="sidenav-toggle"><i class="fa fa-list-ul"></i></a>
+            </div>
+        </div>
+    </nav>
+    <!--导航条-->
+    <!--内容-->
+    <div class="panel-body">
+    <div class="1">
+            <h3>H1 Title Example</h3>
+
+       <p>
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+           Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris
+           nisi ut aliquip ex eacommodo consequat.
+       </p>
+    </div>
+    <div class="2">
+        <h3>Image Frame, position center</h3>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex eacommodo consequat.
+        </p>
+    </div>
+    <div><img src="assets/img/page_img_1.jpg"  class="page_img_1 img-responsive" /></div>
+        <div class="line">
+        [frame align="center" width="400"src="http://demo.themefuse.
+        com/envision/wp-content/uploads/2012/04/page_img_1.jpg"]
+    </div>
+   <div>
+       <h3>Image Frame with float left</h3>
+       <p>
+           Duis aute irure dolor in reprehenderit in voluptate velit esse
+           cillum dolore eu fugiat nulla pariatur.
+       </p>
+       <a href="#"><img src="assets/img/temp_img_3.jpg" class="temp_img_3 img-responsive" /></a>
+       <p>
+           Excepteur sint occaecat
+           cupidatat non proident, sunt in
+           culpa qui officia deserunt mollit anim id est laborum.
+       </p>
+       <p>
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+           Ut enim ad minim veniam, quis nostrudexercitation ullamco laboris
+           nisi ipsum dolor sit amet consectetur adipisicing elit, sed.
+       </p>
+   </div>
+    <div style="clear: both"></div>
+    <div class="line">
+        [frame align="left" width="230" height="143" src="http://demo.themefuse.
+        com/envision/wp-content/uploads/2012/04/temp_img_3.jpg"]
+    </div>
+
+<div >
+    <h3>Image Frame with float right</h3>
+    <p>
+        <a href="#"><img src="assets/img/temp_img_1.jpg" class="temp_img_1"/></a>
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+        accusantium doloremque laudantium, totam rem aperiam,
+        eaque ipsa quae ab illo inventore veritatis et quasi architecto
+        beatae vitae dicta sunt explicabo.
+    </p>
+    <p>
+        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim
+        convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula,
+        nisl. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc.
+    </p>
+</div>
+    <div style="clear: both"></div>
+    <div class="line">
+        [frame align="center" width="400"src="http://demo.themefuse.
+        com/envision/wp-content/uploads/2012/04/page_img_1.jpg"]
+    </div>
+    <div class="divider"></div>
+    <h3>Columns inside text:</h3>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="inner">
+                <h4><a href="#">Multiple Colors &amp; Slider options</a></h4>
+                <p>
+                    <img src="assets/img/temp_img_1.png"  class="alignright"/>
+                    Sliders in all forms & colors: Javascript, Flash,
+                    you name it! We’ve got it! But the best
+                    part is that they can be easily modified to fit your company’s look & feel.
+                    <br>
+                    <a class="link-more">more details</a>
+                </p>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="inner">
+                <h4><a href="#">Multiple Colors &amp; Slider options</a></h4>
+                <p>
+                    <img src="assets/img/temp_img_2.png"  class="alignright"/>
+                    These three icons below the text paragraphs are custom created for the Envision
+                    theme & the included PSD files contain all the layers needed to edit them.
+                    more details
+                    <br>
+                    <a class="link-more">more details</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div style="clear: both"></div>
+    <div class="line">
+        [row]
+        [col type="1_2"]
+        Your content here...
+        [link_more url="#"]
+        [/col]
+
+        [col type="1_2"]
+        Your content here...
+        [link_more url="#"]
+        [/col]
+        [/row]
+
+        [divider type=""]
+    </div>
+    <h3>Framed Tabs example:</h3>
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#home" role="tab" data-toggle="tab">tab1</a></li>
+        <li role="presentation"><a href="#profile" role="tab" data-toggle="tab">tab2</a></li>
+        <li role="presentation"><a href="#messages" role="tab" data-toggle="tab">tab3</a></li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content tab_content">
+        <div role="tabpanel" class="tab-pane active" id="home">
+            <h3>Tab 1 content</h3>
+            <p>The point of using Lorem Ipsum is that it has a near “more-or-less” normal
+                and distribution of letters.
+                One for all and all for one, helping everybody.</p>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="profile">
+            <h3>Tab 2 content</h3>
+            <p>The point of using Lorem Ipsum is that it has a near “more-or-less” normal
+                and distribution of letters.
+                One for all and all for one, helping everybody.</p>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="messages">
+            <h3>Tab 3 content</h3>
+            <p>The point of using Lorem Ipsum is that it has a near “more-or-less” normal
+                and distribution of letters.
+                One for all and all for one, helping everybody.</p>
+        </div>
+    </div>
+    <div class="line">
+        [row]
+        [col type="1_2"]
+        Your content here...
+        [link_more url="#"]
+        [/col]
+
+        [col type="1_2"]
+        Your content here...
+        [link_more url="#"]
+        [/col]
+        [/row]
+
+        [divider type=""]
+    </div>
+    <div class="">
+        <h3>Buttons:</h3>
+        <p>
+            <a href="#" class="btn1"><span>Light Gray Large</span></a>
+            <br>
+            <a href="#" class="btn1 btn2 "><span>Light Gray</span></a>
+            <a href="#" class="btn3 btn3"><span>Light Gray</span></a>
+            <a href="#" class="btn4 btn4"><span>Light Gray</span></a>
+            <a href="#" class="btn5 btn5"><span>Light Gray</span></a>
+        </p>
+    </div>
+</div>
+    <!--脚注-->
+    <div class="footer row">
+        <div class="text-center footer-text">
+            <div class="col-xs-6"><h5>What we do</h5></div>
+            <div class="col-xs-6"><h5>Who We Are</h5></div>
+        </div>
+        <div class="footer-body">
+            <div class="col-xs-6">
+                <ul>
+                    <li><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;Bon Apetit</li>
+                    <li><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;Online Marketing</li>
+                    <li><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;Website Design</li>
+                    <li><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;Strategy</li>
+                    <li><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;E-Learning</li>
+                </ul>
+            </div>
+            <div class="col-xs-6">
+                <ul>
+                    <li><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;About us</li>
+                    <li><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;Our History</li>
+                    <li><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;Art Gallery</li>
+                    <li><img src="assets/img/ico_arrow_blue.gif"/>&nbsp;&nbsp;The Mission</li>
+                </ul>
+            </div>
+            <div class="col-xs-7">
+                <div class="img-social container">
+                    <img src="assets/img/social_icons.png"/>
+                </div>
+            </div>
+            <div class="col-xs-12 text-center">
+                @2013 schinaz.com.please don't steall
+            </div>
+        </div>
+    </div>
+    <!--脚注-->
+</body>
+</html>
+<script>
+    $('[data-sidenav]').sidenav();
+</script>

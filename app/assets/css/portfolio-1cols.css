@@ -1,0 +1,23 @@
+@charset "UTF-8";
+a{
+    text-decoration: none;
+}
+/*内容区域的文字描述*/
+.portfolio-1cols-font{
+    padding: 0;
+}
+.thumbnail>.portfolio-1cols-caption{
+    padding: 0;
+}
+/*内容区背景*/
+.section--code>.row .thumbnail{
+    background-color: #eeeeee;
+}
+/*内容区域的文字描述中的按钮*/
+.portfolio-1cols-thumbnail{
+    background: url("../img/buttons_small_bg.png");
+    padding: 0.35em  2em;
+}
+.portfolio-1cols-thumbnail span{
+    color: #757A89;
+}
